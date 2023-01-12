@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  --color: hsl(228, 45%, 44%);
+  --Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;500;700;800&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--Violet);
+  background-image: url(/images/bg-desktop.svg);
+  background-position: inherit;
+  background-repeat: no-repeat;
+}
+.page{
+  padding: 60px 92px 105px 70px;
+  position: relative;
+}
+.page .test{
+  padding-left: 25px;
+}
+.page .test p{
+  margin-top: 30px;
+  font-size: 12px;
+}
+.page .test a{
+  padding: 15px 50px ;
+  text-align: center;
+  border-radius: 30px;
+  background-color: white;
+  color: var(--Violet);
+  margin-top: 20px;
+  display: block;
+  width: fit-content;
+  transition: 0.3s;
+}
+.page .test a:hover{
+  background-color: var(--Soft-Magenta);
+}
+@media(max-width:767px){
+  .page .test a{
+    margin: 20px auto;
+  }
+}
+.page .icon{
+  position: absolute;
+color: white;
+right: 200px;
+}
+@media(max-width:767px){
+  .page .icon{
+    right: 220px;
+  }
+}
+@media(max-width:992px){
+  .page .icon{
+    margin-top: 15px;
+  }
+}
+@media(max-width:630px){
+  .page .icon{
+    position: relative;
+    right: 1000px;
+  }
+}
+.page .icon svg{
+  margin-left: 12px;
+  transition: 0.3s;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 15px;
+
+
+}
+.page .icon svg:hover{
+color: var(--Soft-Magenta);
+border-color: var(--Soft-Magenta);
+}
