@@ -38,6 +38,7 @@ body{
 }
 .page .test a:hover{
   background-color: var(--Soft-Magenta);
+  color: white;
 }
 @media(max-width:767px){
   .page .test a{
